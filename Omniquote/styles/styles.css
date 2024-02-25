@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: rgb(198, 198, 244);
+}
+
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 60%;
+    width: 50%;
+    padding: 10px;
+    padding-bottom: 22px;
+    box-shadow: 0 10px 10px 5px rgba(198, 198, 244, 0.3);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.container .buttons{
+    display: flex;
+    justify-content: center;
+}
+
+.buttons button{
+    margin: 0 20px;
+    padding: 5px;
+    width: 120px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.quote .author{
+    text-align: right;
+    position: relative;
+}
+
+.quote .author::before{
+    content: '';
+    border: 1px solid rgb(100, 100, 255);
+    position:absolute;
+    width: 15px;
+    transform: translate(-25px,11px);
+
+}
+
+.container .title{
+    position: relative;
+}
+
+.container .title::after{
+    content: '';
+    position: absolute;
+    width: 200px;
+    border: 1px solid rgb(100, 100, 241);
+    transform: translateX(30px);
+}
+
+.new-quote button{
+    color: white;
+    background-color: rgb(100, 100, 241);
+    border: none;
+}
+
+.tweet button{
+    border:0.5px solid rgb(100, 100, 255);
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tweet button i{
+    color: rgb(100, 100, 255);
+    font-size: 20px;
+    margin-right: 7px;
+}
+
+.tweet a{
+    all: unset;
+}
