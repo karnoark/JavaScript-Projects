@@ -1,1 +1,0 @@
-this is karnoark.github.io publishing site
